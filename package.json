@@ -1,0 +1,19 @@
+{
+  "name": "trucksproject",
+  "version": "1.0.0",
+  "description": "\"Provides required dependencies for operating the fleet of trucks in the project this package is associated with\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Corlio5994/TrucksandWarehouses.git"
+  },
+  "author": "Corey Alexander Lionis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Corlio5994/TrucksProject/issues"
+  },
+  "homepage": "https://github.com/Corlio5994/TrucksProject#readme"
+}
