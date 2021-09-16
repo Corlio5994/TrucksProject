@@ -1,14 +1,25 @@
 {
   "name": "trucksproject",
   "version": "1.0.0",
-  "description": "\"Provides required dependencies for operating the fleet of trucks in the project this package is associated with\"",
+  "description": "Provides required dependencies for operating the fleet of trucks in the project this package is associated with",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "npm install",
+    "start": "cd refrigeratedtruck && concurrently \"node app.js\" \"node app2.js\" \"node app3.js \" \" node app4.js \" \" node app5.js \" \" node app6.js \""
+  },
+  "dependencies": {
+    "azure-iot-device": "",
+    "azure-iot-device-mqtt": "",
+    "azure-iot-provisioning-device-mqtt": "",
+    "azure-iot-security-symmetric-key": "",
+    "azure-iot-provisioning-device": "",
+    "azure-maps-rest": "",
+    "chalk": "",
+    "concurrently": ""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Corlio5994/TrucksandWarehouses.git"
+    "url": "git+https://github.com/Corlio5994/TrucksProject.git"
   },
   "author": "Corey Alexander Lionis",
   "license": "ISC",

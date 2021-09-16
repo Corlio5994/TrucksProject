@@ -51,9 +51,9 @@ const tooWarmtooLong = 60; // Time in seconds for contents to start melting if t
 var timeOnCurrentTask = 0; // Time on current task, in seconds. 
 var interval = 60; // Time interval in seconds. 
 var tooWarmPeriod = 0; // Time that contents are too warm, in seconds. 
-var temp = -2; // Current temperature of contents, in degrees C. 
-var baseLat = 47.644702; // Base position latitude. 
-var baseLon = -122.130137; // Base position longitude. 
+var temp = -3; // Current temperature of contents, in degrees C. 
+var baseLat = -37.814009; // Base position latitude. (located in Melbourne)
+var baseLon = 144.9726622; // Base position longitude. 
 var currentLat = baseLat; // Current position latitude. 
 var currentLon = baseLon; // Current position longitude. 
 var destinationLat; // Destination position latitude. 
@@ -67,35 +67,53 @@ const noEvent = "none";
 var eventText = noEvent; // Text to send to the IoT operator. 
 var customer = [ // Latitude and longitude position of customers. 
 
-    // Gasworks Park 
-    [47.645892, -122.336954],
+    // Monash University 
+    [-34.237980, 140.553870],
 
-    // Golden Gardens Park 
-    [47.688741, -122.402965],
+    // Melbourne University
+    [-37.799500, 144.968730],
 
-    // Seward Park 
-    [47.551093, -122.249266],
+    // RMIT Melbourne
+    [-37.80825935, 144.9626645442156],
 
-    // Lake Sammamish Park 
-    [47.555698, -122.065996],
+    // Australian Bosnian Islamic Centre
+    [-37.7478878, 144.7772157090632],
 
-    // Marymoor Park 
-    [47.663747, -122.120879],
+    //Chadstone Shopping Centre
+    [-37.8864009, 145.08247061421372],
 
-    // Meadowdale Beach Park 
-    [47.857295, -122.316355],
+    //Brandon Park Shopping Centre
+    [-37.904953649999996, 145.1623940025832],
 
-    // Lincoln Park 
-    [47.530250, -122.393055],
+    //Ballarat Wildlife Park
+    [-37.569307949999995, 143.89127635215024],
 
-    // Gene Coulon Park 
-    [47.503266, -122.200194],
+    //Bendigo Art Gallery
+    [-36.75734815, 144.27683511891263],
 
-    // Luther Bank Park 
-    [47.591094, -122.226833],
+    //National Gallery of Victoria
+    [-37.822610499999996, 144.968900122702],
 
-    // Pioneer Park 
-    [47.544120, -122.221673]
+    //KFC Bendigo
+    [-36.76133765, 144.27406433000175],
+
+    //The Mill Markets
+    [-37.341962949999996, 144.13209825026223],
+
+    //The Royal Melbourne Hospital
+    [-37.79866935, 44.95641221038036],
+
+    //Village Cinemas Geelong
+    [-38.15026615, 144.3607983650906],
+
+    //Sircuit Bar Melbourne
+    [-37.805781, 144.9829357],
+
+    //Sea Life Melbourne
+    [-37.82065095, 144.95834681394763],
+
+    //My old house (46 Honeysuckle Street, Bendigo)
+    [-36.7660022, 144.2691145]
 ];
 var path = []; // Latitude and longitude steps for the route. 
 var timeOnPath = []; // Time in seconds for each section of the route. 
